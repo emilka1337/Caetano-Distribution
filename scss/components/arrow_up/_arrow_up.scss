@@ -1,0 +1,10 @@
+.up {
+    position: absolute;
+    left: 5vw;
+    bottom: 400px;
+    // top: 100px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    display: none;
+    transition: 1s;
+}

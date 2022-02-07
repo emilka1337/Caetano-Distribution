@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caetano Distribution</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+
+    <script src="./plugins/jquery/jquery-compressed.js"></script>
+    <!-- <script defer src="./js/index.js"></script> -->
+    <script defer src="./js//anims/main-page-anims.js"></script>
+    <!-- <script src="./plugins/jquery.scrollify.js"></script> -->
+    <script defer src="./js/lang/main-page-lang.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+    <script defer src="./js/news/all_news.js"></script>
+    <script defer src="./js/news/main-page-news.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="main-page-body">
+    <img src="./img/bg/главная (3).png" alt="" class="bg">
+    <div class="main-page-container">
+        <div class="preloader">
+            <div class="preloader-image">
+                <img src="./img/preloader.gif" alt="">
+            </div>
+        </div>
+        <div class="row-1" id="top">
+            <header>
+                <div class="header-container">
+                    <section class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </section>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="row row-2">
+            <div class="row-2-container">
+                <div class="row-2-left">
+                    <h1 id="logoAnimated">
+                        Your guide to the world<br> of technology
+                    </h1>
+                </div>
+                <div class="row-2-right">
+                    <div class="social-links" id="socialLinks">
+                        <section>
+                            <a href="">
+                                <img src="./img/facebook-polygon.png" alt="">
+                            </a>
+                        </section>
+                        <section>
+                            <a href="">
+                                <img src="./img/instagram-polygon.png" alt="">
+                            </a>
+                        </section>
+                        <section>
+                            <a href="">
+                                <img src="./img/contacts/call.png" alt="">
+                            </a>
+                        </section>
+                        <img id="down" class="arrow down" src="./img/стрела.png" alt="">
+                    </div>
+                </div>
+                <!-- <img class="background-1" src="./img/фон002.png" alt=""> -->
+                <!-- <img class="background-2" src="./img/фон001.png" alt=""> -->
+            </div>
+        </div>
+        <div class="row-3" id="news">
+            <div class="row-3-container">
+                <header>
+                    <h1 class="text">Новости</h1>
+                </header>
+                <main>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news1.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur quidem ipsum!
+                            </p>
+                            <button class="news-card-button text">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news2.png">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur
+                                quidem ipsum!
+                            </p>
+                            <button class="news-card-button text">Узнать больше</button>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <p>
+                        Улица Гасан Алиева 3Ц,<br>
+                        АЗ1078 Баку, Азербайджан
+                    </p>
+                    <p>pr@caetano-distribution.az</p>
+                </footer>
+            </div>
+        </div>
+        <img id="up" class="arrow up" src="./img/стрела.png" alt="">
+    </div>
+</body>
+
+</html>

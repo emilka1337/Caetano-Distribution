@@ -1,0 +1,38 @@
+.row-2 {
+    user-select: none;
+    margin-top: 30vh;
+    margin-bottom: 40vh;
+
+    @import "../../components/heading/heading";
+
+    h1 {
+        margin-top: 0 !important;
+    }
+
+    .bg-left {
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        z-index: -1;
+        transition: 1s;
+        // transform: translateY(50px);
+        opacity: 0;
+    }
+
+    .bg-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: 1s;
+        // transform: translateY(50px);
+        opacity: 0;
+    }
+
+    @import "../../components/sidebar/sidebar";
+    @import "../../components/arrow/arrow";
+
+    .arrow {
+        transition: 1s;
+    }
+}

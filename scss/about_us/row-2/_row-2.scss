@@ -1,0 +1,53 @@
+$headingTransition: 1000ms;
+
+.row-2 {
+    // display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+
+    @import "../../components/heading/heading";
+
+    .about-us-left-image {
+        z-index: -1000;
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        // transform: translateY(100px);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .about-us-right-image {
+        z-index: -1000;
+        position: absolute;
+        right: 0;
+        top: -20vh;
+        // transform: rotateY(180deg) translateY(100px);
+        transform: rotateY(180deg);
+        opacity: 0;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row-2 {
+        main {
+            flex-direction: column;
+            justify-content: center;
+            // margin: 50px 0px;
+            margin-top: 30vh;
+            margin-bottom: 40vh;
+
+            .main-left {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+
+            .main-right {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

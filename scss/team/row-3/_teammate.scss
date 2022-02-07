@@ -1,0 +1,107 @@
+.teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+    transition: 1000ms;
+    height: 230px;
+    // transform: scale(1.15);
+    width: 10vw;
+
+    img {
+        z-index: 100;
+    }
+
+    .teammate-description {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 198px;
+        height: 0;
+        padding: 0px 10px;
+        overflow: hidden;
+        transform: translateY(-80px);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: 1s;
+
+        h3, h4, p, a {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .quote {
+            font-style: italic;
+        }
+
+        .phone {
+            user-select: all;
+            color: #000;
+            text-decoration: none;
+            // margin-bottom: 30px;
+        }
+
+        .email {
+            font-size: 12px;
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    .bottom-arrow {
+        transform: translateY(-84px);
+        z-index: 1;
+        transition: 1s;
+        width: 198px;
+    }
+
+    &:hover, &:focus {
+        height: 700px;
+        // transform: translateY(-15vh) scale(1.15);
+        transform: translateY(-15vh);
+
+        .teammate-description {
+            // height: 400px;
+            height: 300px;
+            transform: translateY(-60px);
+            padding-top: 50px;
+        }
+
+        .bottom-arrow {
+            transform: translateY(-61px);
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .teammate {
+        width: 150px;
+        font-size: 0.8em;
+
+        img {
+            width: 178px;
+        }
+
+        .teammate-description {
+            width: 150px;
+        }
+
+        .bottom-arrow {
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .teammate {
+        opacity: 1;
+        width: 10vw;
+
+        &:hover,
+        &:focus {
+            transform: none;
+        }
+    }
+}
+

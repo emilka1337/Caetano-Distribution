@@ -1,0 +1,39 @@
+.main-page-body {
+    overflow: hidden;
+    transform: translateY(0);
+    transition: 2s;
+
+    .bg {
+        position: absolute;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.main-page-container {
+    scroll-behavior: smooth;
+    background: $backgroundGradient;
+
+    .up {
+        position: absolute;
+        right: 5vw;
+        bottom: 50px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    @import "../components/preloader/preloader";
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+    @import "./row-4/row-4";
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        overflow-y: scroll !important;
+    }
+}

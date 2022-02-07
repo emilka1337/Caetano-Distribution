@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша команда</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/anims/team-anims.js"></script>
+    <script defer src="./js/lang/team-lang.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="team-body">
+    <img class="bg" src="./img/bg/наша команда (1).png" alt="">
+    <div class="team-container">
+        <div class="row-1">
+            <header>
+                <div class="header-container">
+                    <div class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </div>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button" id="openSidebar">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a class="current-page" href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row-2">
+            <!-- <main>
+                <h1 class="text" id="heading">Наша команда</h1>
+            </main> -->
+
+            <main class="heading" id="heading">
+                <h1 class="text">Наша команда</h1>
+            </main>
+            <div class="arrow">
+                <!-- <img class="arrow" src="./img/стрела.png" alt=""> -->
+                <div class="social-links" id="socialLinks">
+                    <section>
+                        <a href="">
+                            <img src="./img/facebook-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/instagram-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/contacts/call.png" alt="">
+                        </a>
+                    </section>
+                    <img id="down" class="arrow" src="./img/стрела.png" alt="">
+                </div>
+            </div>
+
+            <!-- <img class="arrow" src="./img/стрела.png" alt=""> -->
+            <!-- <img class="bg-left" src="./img/vendors-left.png" alt=""> -->
+            <!-- <img class="bg-right" src="./img/фон002.png" alt=""> -->
+        </div>
+
+        <div class="row-3">
+            <div class="controls">
+                <a class="up">
+                    <img src="./img/стрела.png" alt="">
+                </a>
+                <a class="down">
+                    <img src="./img/стрела.png" alt="">
+                </a>
+            </div>
+
+            <main>
+                <div class="team-row team-row-1">
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-1.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Максим Камар</h3>
+                            <p class="profession">Генеральный директор</p>
+                            <h4 class="quote">Жизнь - это борьба</h4>
+                            <a href="tel: (+994) 50 261 38 00" class="phone">(+994) 50 261 38 00</a>
+                            <a class="email"
+                                href="mailto: director@caetano-distribution.az">director@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-5.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Ирада Сафарова</h3>
+                            <p class="profession">Руководитель отдела продаж</p>
+                            <h4 class="quote">Верить — самоутверждаться — мечтать</h4>
+                            <a href="tel: (+994) 55 205 15 84" class="phone">(+994) 55 205 15 84</a>
+                            <a class="email"
+                                href="mailto: retail1@caetano-distribution.az">retail1@caetano-distribution.az</a>
+
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-3.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Лала Афандиева</h3>
+                            <p class="profession">Операционист</p>
+                            <h4 class="quote">- Все будет хорошо. <br> - А если не будет? <br> - А "если" - не будет.
+                            </h4>
+                            <a href="tel: (+994) 55 225 78 98" class="phone">(+994) 55 225 78 98</a>
+                            <a class="email" href="mailto: admin@caetano-distribution.az">admin@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-4.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Рамин Пашаев</h3>
+                            <p class="profession">Логист</p>
+                            <h4 class="quote">Все границы мира проходят через логистику</h4>
+                            <a href="tel: (+994) 50 225 64 56" class="phone">(+994) 50 225 64 56</a>
+                            <a class="email" href="mailto: logistic@caetano-distribution.az">logistic@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Group 14.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Руслан Новрузов</h3>
+                            <p class="profession">Менеджер ритейл</p>
+                            <h4 class="quote">Жизнь – борьба</h4>
+                            <a href="tel: (+994) 50 250 12 71" class="phone">(+994) 50 250 12 71</a>
+                            <a class="email" href="mailto: retail2@caetano-distribution.az">retail2@caetano-distribution.a</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team-row team-row-2">
+                    <div class="teammate">
+                        <img src="./img/team/Денис Филянин.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Денис Филянин</h3>
+                            <p class="profession">Маркетинг менеджер</p>
+                            <a href="tel: (+994) 51 205 86 25" class="phone">(+994) 51 205 86 25</a>
+                            <a class="email" href="mailto: marketing@caetano-distribution.az">marketing@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-7.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Джамиля Агаева</h3>
+                            <p class="profession">Ассистент маркетинг менеджера</p>
+                            <h4 class="quote">Ты сам рисуешь свою жизнь! Выбирай цвета ярче!</h4>
+                            <a href="tel: (+994) 50 261 21 62" class="phone">(+994) 50 261 21 62</a>
+                            <a class="email" href="mailto: pr@caetano-distribution.az">pr@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-6.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Фидан Султанова</h3>
+                            <p class="profession">Главный бухгалтер</p>
+                            <h4 class="quote">Чтобы достичь цели, нужно, прежде всего к ней идти</h4>
+                            <a href="tel: (+994) 51 205 43 32" class="phone">(+994) 51 205 43 32</a>
+                            <a class="email" href="mailto: accountant@caetano-distribution.az">accountant@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Group 16.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Айтадж Байрамова</h3>
+                            <p class="profession">Помощник бухгалтера</p>
+                            <h4 class="quote">У меня есть Я, мы как-нибудь справимся</h4>
+                            <a href="tel: (+994) 51 205 43 32" class="phone">(+994) 51 205 43 32</a>
+                            <a class="email" href="mailto: buh@caetano-distribution.az">buh@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-2.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Денис Ермаков</h3>
+                            <p class="profession">Менеджер по корпоративным продажам</p>
+                            <h4 class="quote">Всё или ничего!</h4>
+                            <a href="tel: (+994) 51 201 61 40" class="phone">(+994) 51 201 61 40</a>
+                            <a class="email" href="mailto: corp@caetano-distribution.az">corp@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team-row team-row-3">
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Эмилия Вердиханова</h3>
+                            <p class="profession">Менеджер отдела кадров</p>
+                            <a href="tel: (+994) 50 261 38 00" class="phone">(+994) 50 261 38 00</a>
+                            <a class="email" href="mailto: hr@caetano-distribution.az">hr@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-8.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Агаярова Жаля</h3>
+                            <p class="profession">Офис менеджер</p>
+                            <h4 class="quote">Хорошее начало – половина дела</h4>
+                            <a href="tel: (+994) 50 804 33 33" class="phone">(+994) 50 804 33 33</a>
+                            <a class="email" href="office@caetano-distribution.az">office@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate">
+                        <img src="./img/team/Mask Group-9.png" alt="">
+                        <div class="teammate-description">
+                            <h3 class="name">Айсель Керимова</h3>
+                            <p class="profession">Менеджер по корпоративным продажам</p>
+                            <a href="tel: (+994) 55 224 54 04" class="phone">(+994) 55 224 54 04</a>
+                            <a class="email" href="corp2@caetano-distribution.az">corp2@caetano-distribution.az</a>
+                        </div>
+                        <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt="">
+                    </div>
+                    <div class="teammate join-us">
+                        <a href="./form.html"><img src="./img/team/join.png" alt=""></a>
+                        <!-- <div class="teammate-description">
+                            <h3 class="name">Айсель Керимова</h3>
+                            <p class="profession">Менеджер по корпоративным продажам</p>
+                            <a href="tel: (+994) 55 224 54 04" class="phone">(+994) 55 224 54 04</a>
+                            <a class="email" href="corp2@caetano-distribution.az">corp2@caetano-distribution.az</a>
+                        </div> -->
+                        <!-- <img class="bottom-arrow" src="./img/team/bottom-arrow.png" alt=""> -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

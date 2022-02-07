@@ -1,0 +1,24 @@
+.team-body {
+    overflow: hidden;
+    transition: 1.5s;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.team-container {
+    // background: linear-gradient(180deg, #4449699a 34.97%, rgba(255, 255, 255, 0) 155.63%);
+    // background: linear-gradient(180deg, #41424b9f 0%, #b8b8ba7a 77.15%);
+    background: $backgroundGradient;
+    background-size: cover;
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+}

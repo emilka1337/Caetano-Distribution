@@ -1,0 +1,22 @@
+body {
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.news-2-container {
+    // background: linear-gradient(180deg, #73758C 0.43%, #FFFFFF 106.04%);
+    // background: linear-gradient(180deg, #41424b9f 0%, #b8b8ba7a 77.15%);
+    background: $backgroundGradient;
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+    @import "../components/news-rows/news-rows";
+    @import "./row-5/row-5";
+}

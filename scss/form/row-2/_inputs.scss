@@ -1,0 +1,59 @@
+section {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+
+    input {
+        padding: 20px;
+        margin-bottom: 30px;
+        background: #838399;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        transition: 500ms;
+        outline: none;
+        cursor: pointer;
+        font-weight: 300;
+
+        &::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #fff;
+        }
+
+        &:hover {
+            background: #a4a4c4;
+        }
+
+        &:focus {
+            background: #fff;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    label[for="file"] {
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid #fff;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 7px;
+        color: #fff;
+        cursor: pointer;
+        transition: 500ms;
+        font-weight: 300;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            width: 32px;
+        }
+    }
+}

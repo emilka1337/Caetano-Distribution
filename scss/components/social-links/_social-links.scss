@@ -1,0 +1,30 @@
+.social-links {
+    padding-top: 60px;
+    transition: 700ms ease-out;
+    transform: translateY(100px);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        margin: 5x 0px;
+        display: flex;
+        justify-content: center;
+        transform: scale(0.6);
+
+        a {
+
+            img {
+                margin: auto;
+            }
+        }
+    }
+
+    @import "../arrow/arrow";
+
+    .arrow {
+        transform: none !important;
+    }
+}

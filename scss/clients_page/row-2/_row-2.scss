@@ -1,0 +1,42 @@
+.row-2 {
+    @import "../../components/heading/heading";
+    user-select: none;
+    margin-top: 30vh !important;
+    margin-bottom: 50vh !important;
+    max-width: 1600px;
+    margin: auto;
+
+    main {
+        margin: 50px 0px;
+        h1 {
+            margin: 0 !important;
+            transition: 2s !important;
+        }
+    }
+    
+    @import "../../components/arrow/arrow";
+    
+    .arrow {
+        cursor: pointer;
+    }
+
+    .left-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        // transform: translateY(100px);
+        transition: 1s;
+    }
+
+    .right-back {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        // transform: translateY(100px);
+        transition: 1s;
+    }
+}

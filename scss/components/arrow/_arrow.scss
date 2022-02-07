@@ -1,0 +1,19 @@
+$arrowLeftMargin: 10vw;
+
+.arrow {
+    display: inline;
+    transform: translateX($arrowLeftMargin) translateY(-40px);
+    animation: arrow 1s infinite alternate;
+    cursor: pointer;
+    transition: 1s;
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(80px) ;
+    }
+
+    to {
+        transform: translateY(40px) ;
+    }
+}

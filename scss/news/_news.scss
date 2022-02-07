@@ -1,0 +1,67 @@
+.news-body {
+    // overflow: hidden;
+    // transition: 1500ms;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.news-container {
+    // background: linear-gradient(180deg, #53567594 14.72%, #ffffffa1 60.77%, #bebfca85 121.98%, #73758ca8 122%);
+    // background: linear-gradient(180deg, #41424b9f 0%, #b8b8ba7a 77.15%);
+    background: $backgroundGradient;
+    position: relative;
+    padding-bottom: 200px;
+
+    // .news-top-bg {
+    //     z-index: -1;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     opacity: 0;
+    //     // transform: translateY(100px);
+    //     transition: 1s;
+    // }
+
+    // .news-middle-bg {
+    //     z-index: -1;
+    //     position: absolute;
+    //     right: 0;
+    //     top: 900px;
+    // }
+
+    // .news-bottom-left-bg {
+    //     position: absolute;
+    //     bottom: 0;
+    //     z-index: -1;
+    // }
+
+    // .news-bottom-right-bg {
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+    //     z-index: -1;
+    // }
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+    @import "../components/news-rows/news-rows";
+    @import "./row-7/row-7";
+}
+
+@media screen and (max-width: 1200px) {
+    .news-body {
+        overflow: scroll;
+    }
+}

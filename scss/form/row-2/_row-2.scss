@@ -1,0 +1,42 @@
+.row-2 {
+    padding: 100px 0px;
+
+    form {
+        width: 894px;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        background: rgba(88, 90, 117, 0.5);
+        border-radius: 9px;
+        padding: 120px 80px;
+        position: relative;
+
+        @import "./inputs";
+        @import "./button";
+        @import "./success_fail";
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-2 {
+        form {
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            section {
+                width: 100%;
+
+                button {
+                    position: static;
+                    align-self: center;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

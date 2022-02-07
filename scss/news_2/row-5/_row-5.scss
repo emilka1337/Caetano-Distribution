@@ -1,0 +1,22 @@
+.row-5 {
+    
+    main {
+        // width: 50% !important;
+        width: 696px;
+        height: 570px;
+        padding: 80px !important;
+
+        .news-card { 
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-5 {
+        main {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+    }
+}

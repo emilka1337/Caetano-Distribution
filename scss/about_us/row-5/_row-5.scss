@@ -1,0 +1,42 @@
+.row-5 {
+    main {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #4a4a53;
+            margin: 0px 20px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .arrow {
+            width: 340px;
+            border: 2px solid #666774;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-5 {
+        main {
+            width: 90%;
+            font-size: 0.5em;
+            text-align: center;
+        }
+    }
+}

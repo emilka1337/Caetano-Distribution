@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заполнения</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/lang/form-lang.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_04JzY5BiYsRvZmSh6GW8O");
+        })();
+    </script>
+    <script defer src="./js/form/form.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="row-1">
+            <header>
+                <div class="header-container">
+                    <section class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </section>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button" id="openSidebar">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a class="current-page" href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row-2">
+            <form method="POST" action="https://formsubmit.co/78d3352beae872e28bc62cd8b5ddb196" enctype="multipart/form-data" class="contact-form" id="contact-form">
+                <section class="form-left">
+                    <input type="text" placeholder="Имя" id="name" name="name" required>
+                    <input type="text" placeholder="Фамилия" id="surname" name="surname" required>
+                    <input type="text" placeholder="Отчество" id="fatherName" name="fatherName">
+                    <input type="date" id="date">
+                </section>
+                <section class="form-right">
+                    <input type="text" placeholder="Место проживания" id="location" name="location">
+                    <input type="text" placeholder="Номер телефона" id="phone" name="phone" required>
+                    <input type="email" placeholder="Электронный адрес" id="email" name="email" required>
+                    <input type="text" placeholder="Желаемая должность" id="position" name="position">
+                    <!-- <button id="cv">Прикрепить резюме</button> -->
+                    <!-- <p> -->
+                    <label for="file">
+                        <p class="text">Прикрепить резюме</p>
+                        <img src="./img/file 1.png" alt="">
+                    </label>
+                    <input id="file" type="file" name="file">
+                    <!-- <input type="submit" value="Отправить"> -->
+                    <!-- </p> -->
+                    <button id="submit" class="text">Отправить</button>
+                </section>
+                <div class="success">
+                    <h1 class="text">Отправлено в обработку</h1>
+                    <span class="material-icons">
+                        done
+                    </span>
+                </div>
+                <div class="fail">
+                    <h1 class="text">Произошла ошибка</h1>
+                    <span class="material-icons">
+                        close
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

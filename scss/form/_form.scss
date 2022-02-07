@@ -1,0 +1,7 @@
+.form-container {
+    background: $backgroundGradient;
+    min-height: 100vh;
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+}

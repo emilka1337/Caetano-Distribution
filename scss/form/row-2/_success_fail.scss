@@ -1,0 +1,23 @@
+.success,
+.fail {
+    display: none;
+    user-select: none;
+
+    &.show {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+        h1,
+        span {
+            color: #fff;
+        }
+
+        span {
+            font-size: 30px;
+        }
+    }
+}

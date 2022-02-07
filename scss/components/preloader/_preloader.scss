@@ -1,0 +1,28 @@
+.preloader {
+    position: fixed;
+    display: block;
+    z-index: 20000;
+    width: 100vw;
+    height: 100vh;
+    transition: 500ms;
+    background: #000;
+    
+    img {
+        display: block;
+        margin: auto;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .preloader {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100vw;
+            height: auto;
+            transform: scale(2);
+        }
+    }
+}

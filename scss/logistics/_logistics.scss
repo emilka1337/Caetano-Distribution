@@ -1,0 +1,33 @@
+.logistics-body {
+    // overflow: hidden;
+    transition: 1.5s;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.logistics-container {
+    // background: linear-gradient(180deg, #3940649a 34.97%, rgba(255, 255, 255, 0) 155.63%);
+    background: $backgroundGradient;
+    background-size: cover;
+    position: relative;
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+
+    .bg-2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 387px;
+    }
+}
+
+@media screen and (max-width: 1200) {
+    body {
+        overflow-y: scroll;
+    }
+}

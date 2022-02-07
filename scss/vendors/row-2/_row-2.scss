@@ -1,0 +1,27 @@
+.row-2 {
+    user-select: none;
+    margin-top: 30vh;
+    margin-bottom: 40vh;
+    
+    @import "../../components/heading/heading";
+
+    .bg-left {
+        position: absolute;
+        top: 30vh;
+        left: 0;
+        z-index: -1000;
+        // transform: translateY(100px);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    // .left-image {
+    //     position: absolute;
+    //     top: 10vh;
+    //     left: -40px;
+    //     z-index: -1000;
+    //     transform: translateY(100px);
+    //     opacity: 0;
+    //     transition: 2s;
+    // }
+}

@@ -1,0 +1,17 @@
+.row-3 {
+    @import "../../components/table/table";
+
+    main {
+        padding: 80px 40px;
+    }
+
+    .divider {
+        height: 0;
+        transition: 1000ms;
+        border: 1px solid #fff !important;
+
+        &.shown {
+            height: 280px;
+        }
+    }
+}

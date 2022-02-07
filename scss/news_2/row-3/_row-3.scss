@@ -1,0 +1,26 @@
+.row-3 {
+    padding: 100px 0px;
+    padding-bottom: 50px !important;
+
+    &>main {
+        max-width: 1272px;
+        margin: auto;
+
+        h1 {
+            color: #fff;
+            margin: 50px 0px;
+            font-size: 44px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-3 {
+        &>main {
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}

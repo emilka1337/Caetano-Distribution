@@ -1,0 +1,19 @@
+.contacts-body {
+    overflow: hidden !important;
+    transition: 2s;
+}
+
+.contacts-container {
+    // background: url(../img/background-3.png) no-repeat;
+    // background: linear-gradient(180deg, #464a75a1 28.16%, rgba(98, 99, 119, 0.226) 109.59%);
+    // background: linear-gradient(180deg, #41424b9f 0%, #b8b8ba7a 77.15%);
+    background: $backgroundGradient;
+    background-size: cover;
+    overflow: hidden;
+    height: 1908px;
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-3/row-3";
+    @import "./row-4/row-4";
+}

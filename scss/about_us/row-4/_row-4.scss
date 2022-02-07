@@ -1,0 +1,23 @@
+.row-4 {
+    @import "../../components/table/table";
+
+    main {
+        transform: translateY(100px);
+        transition: 1s;
+        padding: 80px 40px;
+        
+        .divider {
+            // border: none !important;
+            height: 0px;
+            transition: 1s;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-4 {
+        main {
+            transform: none;
+        }
+    }
+}

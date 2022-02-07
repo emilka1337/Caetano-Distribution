@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/lang/about-us-langs.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+    <script defer src="./js/anims/about-us-anims.js"></script>
+    <!-- <script defer src="./plugins/jquery/jquery-compressed.js"></script>
+    <script defer src="./plugins/jquery.lettering.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="about-us-body" id="top">
+    <img class="bg" src="./img/bg/о нас (1).png" alt="">
+    <div class="about-us-container">
+        <div class="row-1">
+            <header>
+                <div class="header-container">
+                    <section class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </section>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button" id="openSidebar">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a class="current-page" href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row-2">
+            <main class="heading" id="heading">
+                <h1 class="text">
+                    <span class="letters">О нас</span>
+                </h1>
+            </main>
+            <!-- <div class="arrow"> -->
+                <div class="social-links" id="socialLinks">
+                    <section>
+                        <a href="">
+                            <img src="./img/facebook-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/instagram-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/contacts/call.png" alt="">
+                        </a>
+                    </section>
+                    <img id="down" class="arrow down" src="./img/стрела.png" alt="">
+                </div>
+            <!-- </div> -->
+
+            <!-- <img class="about-us-left-image" src="./img/about-us-left.png" alt=""> -->
+            <!-- <img class="about-us-right-image" src="./img/about-us-left.png" alt=""> -->
+        </div>
+
+        <div class="row-4">
+            <main id="table">
+                <div class="main-left text">
+                    <p>
+                        Вот уже более 7 лет мы являемся официальными дистрибьюторами таких международных
+                        брендов как – HP, Asus, Kyocera, Xiaomi, Defender, Anker и др.
+                    </p>
+                    <p>
+                        Честная и добросовестная политика дистрибуции, творческий подход, сильная корпоративная
+                        культура, открытость
+                        ко всему новому и передовому – наши основные
+                        ценности.
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <div class="main-right text">
+                    <p>
+                        Мы постоянно развиваемся.
+                        Компания начала своё существование
+                        с четырьмя работниками в штате, а сейчас
+                        в нашей команде насчитывается более десятка сотрудников, и мы продолжаем развиваться.
+                    </p>
+                    <p>
+                        Для улучшения условий организации
+                        и условий работы для сотрудников мы переехали в большой и современный офис.
+                    </p>
+                </div>
+            </main>
+        </div>
+
+        <div class="row-5">
+            <main>
+                <div class="arrow"></div>
+                <a href="" class="text">Скачать наш брендбук</a>
+                <div class="arrow"></div>
+            </main>
+        </div>
+
+        <div class="row-6">
+            <img class="footer-img" src="./img/about-us-footer.png" alt="">
+        </div>
+        <img id="up" class="arrow up" src="./img/стрела.png" alt="">
+    </div>
+</body>
+
+</html>

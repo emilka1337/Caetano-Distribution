@@ -1,0 +1,51 @@
+body {
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.clients-body {
+    overflow: hidden;
+    transition: 2s;
+    transform: translateY(0px);
+
+    .up {
+        position: absolute;
+        left: 5vw;
+        bottom: 100px;
+        // top: 100px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .clients-container {
+        // background: url(../img/background-3.png) no-repeat;
+        // background: linear-gradient(180deg, #5c5f83be 22.1%, rgba(115, 117, 140, 0) 111.93%);
+        background: $backgroundGradient;
+        background-size: cover;
+
+        @import "./row-1/row-1";
+        @import "./row-2/row-2";
+        @import "./row-3/row-3";
+        @import "./row-4/row-4";
+    }
+
+    &.scrolled {
+        transform: translateY(-860px);
+    }
+}
+
+@media (max-width: 1366px) {
+    .clients-body {
+        &.scrolled {
+            transform: translateY(-850px);
+        }
+    }
+}

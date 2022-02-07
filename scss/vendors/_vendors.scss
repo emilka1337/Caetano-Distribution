@@ -1,0 +1,45 @@
+.vendors-body {
+    overflow: hidden !important;
+    transition: 2s;
+    transform: translateY(0);
+
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .vendors-container {
+        // background: linear-gradient(180deg, #424566c7 19.52%, rgba(115, 117, 140, 0) 110.01%);
+        background: $backgroundGradient;
+        background-size: cover;
+
+        @import "../components/arrow_up/arrow_up";
+
+        .up {
+            bottom: 200px;
+            display: initial;
+            opacity: 0;
+        }
+
+        @import "./row-1/row-1";
+        @import "./row-2/row-2";
+        @import "./row-3/row-3";
+        @import "./row-4/row-4";
+    }
+
+    &.scrolled {
+        transform: translateY(-800px);
+    }
+}
+
+@media (max-width: 1366px) {
+    .vendors-body {
+        &.scrolled {
+            transform: translateY(-1000px);
+        }
+    }
+}

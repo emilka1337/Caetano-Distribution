@@ -1,0 +1,15 @@
+.row-6 {
+    .footer-img {
+        width: 100%;
+        transform: translateY(100px);
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row-6 {
+        img {
+            transform: none;
+        }
+    }
+}

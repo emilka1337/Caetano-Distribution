@@ -1,0 +1,28 @@
+.about-us-body {
+    overflow: hidden;
+    transition: 2s;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+        opacity: 0;
+        transition: 2s;
+    }
+}
+
+.about-us-container {
+    // background: linear-gradient(180deg, #565975 6.82%, rgba(115, 117, 140, 0) 95.11%);
+    background: $backgroundGradient;
+
+
+
+    @import "../components/arrow_up/arrow_up";
+
+    @import "./row-1/row-1";
+    @import "./row-2/row-2";
+    @import "./row-4/row-4";
+    @import "./row-5/row-5";
+    @import "./row-6/row-6";
+}

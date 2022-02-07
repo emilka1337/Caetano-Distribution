@@ -1,0 +1,25 @@
+.row-3 {
+    @import "../../components/table/table";
+    // max-width: 1200px;
+    // margin: auto;
+
+    main {
+        
+        .main-left,
+        .main-right {
+            // padding: 0px 150px;
+            // padding: 100px 0px;
+            padding-bottom: 150px;
+        }
+
+        .divider {
+            height: 0;
+            transition: 1000ms;
+            border: 1px solid #fff !important;
+
+            &.shown {
+                height: 300px;
+            }
+        }
+    }
+}

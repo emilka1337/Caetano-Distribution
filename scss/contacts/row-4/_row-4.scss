@@ -1,0 +1,41 @@
+.row-4 {
+    footer {
+        width: 140px;
+        margin: auto;
+        padding: 150px 0px;
+        display: flex;
+        justify-content: space-between;
+        animation: footer 1s infinite alternate;
+    }
+
+    .bg-2 {
+        position: absolute;
+        right: 0;
+        top: calc(1908px - 619px);
+        z-index: -1;
+    }
+}
+
+@keyframes footer {
+
+    // 50% {
+    //     transform: translateY(-50px);
+    // }
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(-80px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row-4 {
+        footer {
+            width: 50%;
+            justify-content: space-around;
+            // padding: 80px;
+        }
+    }
+}

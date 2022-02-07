@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/news/all_news.js"></script>
+    <script defer src="./js/news/news.js"></script>
+    <script defer src="./js/anims/news-anims.js"></script>
+    <script defer src="./js/lang/news-lang.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+</head>
+
+<body class="news-body">
+    <img class="bg" src="./img/bg/новости.png" alt="">
+    <div class="news-container">
+        <div class="row-1">
+            <header>
+                <div class="header-container">
+                    <section class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </section>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button" id="openSidebar">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a class="current-page" href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row-2">
+            <!-- <main>
+                <h1 class="text" id="heading">Новости</h1>
+            </main> -->
+            <main class="heading" id="heading">
+                <h1 class="text">Новости</h1>
+            </main>
+            <div class="arrow">
+                <!-- <img class="arrow" src="./img/стрела.png" alt=""> -->
+                <div class="social-links" id="socialLinks">
+                    <section>
+                        <a href="">
+                            <img src="./img/facebook-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/instagram-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/contacts/call.png" alt="">
+                        </a>
+                    </section>
+                    <img id="down" class="arrow" src="./img/стрела.png" alt="">
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="row-3">
+            <main>
+                <img class="arrow" src="./img/стрела.png" alt="">
+            </main>
+        </div> -->
+
+        <div class="row-4 news-rows">
+            <div class="news-row-container">
+                <main>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news1.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-1" data-news-id="1">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news2.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur
+                                quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-2" data-news-id="2">Узнать больше</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="row-5 news-rows">
+            <div class="news-row-container">
+                <main>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news3.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-3" data-news-id="3">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news4.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur
+                                quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-5" data-news-id="4">Узнать больше</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="row-6 news-rows">
+            <div class="news-row-container">
+                <main>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news5.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-5" data-news-id="5">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-left">
+                            <img src="./img/news/news6.png" alt="">
+                        </div>
+                        <div class="news-card-right">
+                            <h3 class="news-card-logo">
+                                Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="news-card-date">
+                                Июнь 7 / 2012
+                            </p>
+                            <p class="news-card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum dignissimos
+                                fuga numquam nemo consequuntur
+                                quidem ipsum!
+                            </p>
+                            <button class="news-card-button text" id="news-button-6" data-news-id="6">Узнать больше</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- <div class="row-7">
+            <footer>
+                <p>Hasan Aliyev street 3C,<br> AZ1078 Baku, Azerbaijan</p>
+                <p>office@caetano-distribution.az</p>
+            </footer>
+        </div> -->
+
+        <!-- <img class="news-top-bg" src="./img/логистика 1.png" alt=""> -->
+        <!-- <img class="news-middle-bg" src="./img/наши клиенты 1.png" alt=""> -->
+        <!-- <img class="news-bottom-left-bg" src="./img/новости 2.png" alt=""> -->
+        <!-- <img class="news-bottom-right-bg" src="./img/новости 3.png" alt=""> -->
+    </div>
+</body>
+
+</html>

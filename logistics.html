@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логистика</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/anims/logistics-anim.js"></script>
+    <script defer src="./js/lang/logistics-lang.js"></script>
+    <script defer src="./js/lang/langs-switcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="top" class="logistics-body">
+    <div class="logistics-container">
+        <div class="row-1">
+            <header>
+                <div class="header-container">
+                    <section class="header-left">
+                        <a href="./main_page.html" title="На Главную">
+                            <img src="./img/logo-3.png" alt="">
+                        </a>
+                    </section>
+                    <section class="header-right">
+                        <ul class="languages">
+                            <li><button id="langRU" class="lang-button">RU</button></li>
+                            <li><button id="langAZ" class="lang-button">AZ</button></li>
+                            <li><button id="langEN" class="lang-button">EN</button></li>
+                        </ul>
+                        <button class="sidebar-button" id="openSidebar">
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                            <div class="button-line"></div>
+                        </button>
+                    </section>
+                </div>
+            </header>
+
+            <aside id="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar-right">
+                        <ul class="text">
+                            <li><a href="./about_us.html">О нас</a></li>
+                            <li><a href="./vendors.html">Вендоры</a></li>
+                            <li><a class="current-page" href="./logistics.html">Логистика</a></li>
+                            <li><a href="./clients.html">Наши клиенты</a></li>
+                            <li><a href="./team.html">Наша команда</a></li>
+                            <li><a href="./contacts.html">Контакты</a></li>
+                            <li><a href="./news.html">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row-2">
+            <main class="heading" id="heading">
+                <h1 class="text"><span class="letters">Логистика</span></h1>
+            </main>
+            <div class="arrow">
+                <!-- <img class="arrow" src="./img/стрела.png" alt=""> -->
+                <div class="social-links" id="socialLinks">
+                    <section>
+                        <a href="">
+                            <img src="./img/facebook-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/instagram-polygon.png" alt="">
+                        </a>
+                    </section>
+                    <section>
+                        <a href="">
+                            <img src="./img/contacts/call.png" alt="">
+                        </a>
+                    </section>
+                    <img id="down" class="arrow" src="./img/стрела.png" alt="">
+                </div>
+            </div>
+
+            <img class="bg-1" src="./img/вендоры 1.png" alt="">
+        </div>
+
+        <div class="row-3">
+            <div class="card logistics-card-1">
+                <a href="#card-2"><img class="card-arrow card-1-arrow" src="./img/стрела.png" alt=""></a>
+                <div class="card-left">
+                    <p class="text">
+                        Безусловно одним из самых важных сегментов в любой дистрибьютерской компании
+                        является её логистика.
+                        Мы довели до полной автоматизации все логистические вопросы.
+                    </p>
+                    <p class="text">
+                        В данной сфере деятельности наша система логистики является одной
+                        из самых развитых на сегодняшний
+                        день в Азербайджане.
+                    </p>
+                </div>
+                <div class="card-right">
+                    <img src="./img/logistics/IMG_8281 1.png" alt="">
+                </div>
+            </div>
+            <div id="card-2" class="card logistics-card-2">
+                <a href="#card-3"><img class="card-arrow card-2-arrow" src="./img/стрела.png" alt=""></a>
+                <div class="card-left">
+                    <p class="text">
+                        Наши специалисты чётко придерживаются данной системы. Она характеризуется
+                        правильным и быстрым принятием товаров
+                        на таможне, с учетом всех сопроводительных
+                        документов, предоставляемой нашей компанией. Особый контроль ведётся за соответствием всех
+                        прибывших товаров данным
+                        документам.
+                    </p>
+                    <p class="text">
+                        Мы полностью контролируем всю импортируемую продукцию и её документацию для наших партнёров.
+                    </p>
+                </div>
+                <div class="card-right">
+                    <img src="./img/logistics/gabrielle-henderson-HJckKnwCXxQ-unsplash 1.png" alt="">
+                </div>
+            </div>
+            <div id="card-3" class="card logistics-card-3">
+                <a href="#card-4"><img class="card-arrow card-3-arrow" src="./img/стрела.png" alt=""></a>
+                <div class="card-left">
+                    <p class="text">
+                        Автоматизированная процедура приёма
+                        и отправки товара уменьшает затраты ресурсов
+                        компании, экономит время
+                        и помогает в контроле.
+                    </p>
+                </div>
+                <div class="card-right">
+                    <img src="./img/logistics/ismael-paramo-tnVdQGmWtb0-unsplash 1.png" alt="">
+                </div>
+            </div>
+            <div id="card-4" class="card logistics-card-4">
+                <a href="#top"><img class="card-arrow card-4-arrow" src="./img/стрела.png" alt=""></a>
+                <div class="card-left">
+                    <p class="text">
+                        Сотрудники отдела логистики выполняют целый комплекс мероприятий по доставке заказов,
+                        включающие: обеспечение различных
+                        способов доставки, составление эффективных и оптимальных маршрутов перемещения грузов с учетом
+                        сроков поставки,
+                        правильная комплектация груза, предоставление всех соответствующих документов
+                        по товарам.
+                    </p>
+                    <p class="text">
+                        В наличии имеются два грузовых автомобиля,
+                        с профессиональными водителями, осуществляющими перевозки два раза в день по определённому
+                        графику,
+                        в любую точку Азербайджана.
+                    </p>
+                </div>
+                <div class="card-right">
+                    <img src="./img/logistics/IMG_8262 1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img class="bg-2" src="./img/о нас 1.png" alt="">
+    </div>
+</body>
+
+</html>

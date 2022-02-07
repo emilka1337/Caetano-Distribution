@@ -1,0 +1,16 @@
+.row-1 {
+    @import "../../components/header/header";
+    @import "../../components/sidebar/sidebar";
+
+    aside {
+        transition: 700ms linear !important;
+        
+        // @import "../../components/social-links/social-links";
+
+        // .social-links {
+        //     position: relative;
+        //     right: 15vw;
+        //     height: 20vh !important;
+        // }
+    }
+}

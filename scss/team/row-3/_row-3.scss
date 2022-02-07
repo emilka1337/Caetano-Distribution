@@ -1,0 +1,83 @@
+.row-3 {
+    padding-bottom: 1000px;
+
+    .controls {
+        position: absolute;
+        right: 100px;
+
+        a {
+            cursor: pointer;
+            
+            img {
+                display: block;
+                width: 16px;
+            }
+        }
+
+        .up {
+
+            img {
+                transform: rotate(180deg);
+                margin-bottom: 98px;
+            }
+        }
+    }
+
+    main {
+        height: 600px;
+        width: 80%;
+        margin: auto;
+        transition: 2s;
+
+        .team-row {
+            height: 75vh;
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            transition: 1s;
+
+            @import "./teammate";
+
+            .teammate.join-us:hover {
+                transform: none;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            background: rgba(255, 255, 255, 0);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #000;
+            width: 10px;
+            border-radius: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row-3 {
+        // height: 300vh;
+        padding-bottom: 0;
+
+        .controls {
+            display: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            width: 100% !important;
+            height: 300vh;
+
+            .team-row {
+                height: auto !important;
+            }
+
+            .team-row {
+                flex-direction: column;
+            }
+        }
+    }
+}
